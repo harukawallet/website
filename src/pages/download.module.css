@@ -1,0 +1,47 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.header {
+  padding: 3rem 0;
+}
+
+.image {
+  height: 14rem;
+  margin-top: 3rem;
+}
+
+.layout-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 5rem 1fr 1fr 5rem;
+  grid-template-rows: minmax(auto, 8rem) minmax(auto, 20rem) minmax(auto, 8rem) 20rem;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding: 3rem;
+  background-color: var(--ifm-pre-background);
+  border-radius: 10px;
+}
+
+.item1 {
+  grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.item2 {
+  grid-area: 2 / 3 / span 2 / span 1;
+}
+
+.item3 {
+  grid-area: 3 / 2 / span 2 / span 1;
+}
+
+.item4 {
+  grid-area: 4 / 3 / span 1 / span 1;
+}

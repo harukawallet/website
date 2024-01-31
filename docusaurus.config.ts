@@ -67,8 +67,9 @@ const config: Config = {
           label: "Tutorial",
         },
         { to: "/blog", label: "Blog", position: "left" },
+        { to: "/download", label: "Download", position: "left" },
         {
-          href: "https://github.com/harukawallet/website",
+          href: "https://github.com/harukawallet",
           label: "GitHub",
           position: "right",
         },
@@ -122,13 +123,18 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Haruka Wallet. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Haruka Wallet`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+  customFields: {
+    githubReleaseUser: "harukawallet",
+    githubReleaseRepo: "wallet-releases",
+  },
 };
 
 export default config;
